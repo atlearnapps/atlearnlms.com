@@ -1,0 +1,21 @@
+/* Apply styles only inside .custom-swiper-container */
+.custom-swiper-container .custom-swiper-button {
+    
+    color: white;
+    padding: 12px;
+    border-radius: 50%;
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .custom-swiper-container .custom-swiper-button:hover {
+    /* background-color: #374151; Lighter gray */
+    transform: scale(1.1);
+  }
+  
+  /* Override Swiper default styles only in this container */
+  .custom-swiper-container .swiper-button-prev::after,
+  .custom-swiper-container .swiper-button-next::after {
+    display: none;
+  }
+  

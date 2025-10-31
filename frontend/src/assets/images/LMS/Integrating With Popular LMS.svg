@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="ELearning">
+  <g fill="#000000" class="color000000 svgShape">
+    <rect width="8" height="2" x="28" y="47" fill="#e6e6e6" class="colore6e6e6 svgShape"></rect>
+    <path fill="#e6e6e6" d="M44,14H36a5,5,0,0,0-4,2,5,5,0,0,0-4-2H20a1,1,0,0,0-1,1V31a1,1,0,0,0,1,1h8a3,3,0,0,1,3,3,1,1,0,0,0,2,0,3,3,0,0,1,3-3h8a1,1,0,0,0,1-1V15A1,1,0,0,0,44,14ZM31,31a5,5,0,0,0-3-1H21V16h7a3,3,0,0,1,3,3Zm12-1H36a5,5,0,0,0-3,1V19a3,3,0,0,1,3-3h7Z" class="colore6e6e6 svgShape"></path>
+    <path fill="#67d4fd" d="M32 18a4 4 0 0 1 4-4h8V30H36a4 4 0 0 0-2.4.8L32 32zM30.4 30.8A4 4 0 0 0 28 30H20V14h8a4 4 0 0 1 4 4V32z" class="colorfd9467 svgShape"></path>
+    <rect width="58" height="6" x="3" y="41" fill="#018abe" class="color61c3b6 svgShape"></rect>
+    <path fill="#4e5a5f" d="M61,6H3A1,1,0,0,0,2,7V47a1,1,0,0,0,1,1H27v8H21a1,1,0,0,0,0,2H43a1,1,0,0,0,0-2H37V48H61a1,1,0,0,0,1-1V7A1,1,0,0,0,61,6ZM35,56H29V48h6ZM60,46H4V8H60Z" class="color4e5b5f svgShape"></path>
+    <path fill="#4e5a5f" d="M44,13H36a5,5,0,0,0-4,2,5,5,0,0,0-4-2H20a1,1,0,0,0-1,1V30a1,1,0,0,0,1,1h8a3,3,0,0,1,3,3,1,1,0,0,0,2,0,3,3,0,0,1,3-3h8a1,1,0,0,0,1-1V14A1,1,0,0,0,44,13ZM31,30a5,5,0,0,0-3-1H21V15h7a3,3,0,0,1,3,3Zm12-1H36a5,5,0,0,0-3,1V18a3,3,0,0,1,3-3h7Z" class="color4e5b5f svgShape"></path>
+    <path fill="#ffffff" d="M36 19h4a1 1 0 0 0 0-2H36a1 1 0 0 0 0 2zM36 23h4a1 1 0 0 0 0-2H36a1 1 0 0 0 0 2zM36 27h4a1 1 0 0 0 0-2H36a1 1 0 0 0 0 2zM24 19h4a1 1 0 0 0 0-2H24a1 1 0 0 0 0 2zM24 23h4a1 1 0 0 0 0-2H24a1 1 0 0 0 0 2zM29 26a1 1 0 0 0-1-1H24a1 1 0 0 0 0 2h4A1 1 0 0 0 29 26z" class="colorffffff svgShape"></path>
+  </g>
+</svg>
