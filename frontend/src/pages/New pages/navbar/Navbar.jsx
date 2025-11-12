@@ -14,7 +14,7 @@ import AtlearnAILogo from "src/assets/images/Logo/atlearn_ai_wo_logo.webp";
 import AtlearnLMSLogo from "src/assets/images/Logo/atlearn_lms_wo_logo.webp";
 import AtlearnSchoolLogo from "src/assets/images/Logo/atlearn_school_wo_logo.webp";
 import DemoPopup from "./DemoPopup";
-import RoleSelectionModal from "src/components/userProfile/modal/RoleSelectionModal";
+import RoleSelectionModal from "src/components/userProfile/Modal/RoleSelectionModal.jsx";
 
 function Navbar() {
   const contactEmail = process.env.REACT_APP_CONTACT_EMAIL;

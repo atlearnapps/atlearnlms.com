@@ -2,7 +2,7 @@ import { useAuth0 } from "@auth0/auth0-react";
 import React, { useEffect, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import apiClients from "src/apiClients/apiClients";
-import RoleModal from "src/components/userProfile/modal/RoleModal";
+import RoleModal from "src/components/userProfile/Modal/RoleModal.jsx";
 
 function Callback() {
   const { user, isAuthenticated, getAccessTokenSilently } = useAuth0();

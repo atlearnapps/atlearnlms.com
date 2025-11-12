@@ -19,7 +19,7 @@ import { useDispatch } from "react-redux";
 import { UseAuth } from "src/utils/UseAuth/UseAuth";
 import { setUser } from "src/Redux/userSlice";
 import { toast } from "react-toastify";
-import RoleModal from "src/components/userProfile/modal/RoleModal";
+import RoleModal from "src/components/userProfile/Modal/RoleModal.jsx";
 import SocialMediaCarousel from "./SocialMediaCarousel";
 import Banner from "./Banner";
 import { useAuth0 } from "@auth0/auth0-react";
