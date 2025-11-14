@@ -1,0 +1,53 @@
+name: Deploy to DEV (dev.atlearnlms.com)
+
+on:
+  push:
+    branches: ["dev"]
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v3
+
+      - name: Deploy via SSH
+        uses: appleboy/ssh-action@v0.1.7
+        with:
+          host: ${{ secrets.SERVER_IP }}
+          username: ${{ secrets.SERVER_USER }}
+          password: ${{ secrets.SERVER_PASS }}
+          script_stop: true
+          script: |
+            echo "=== Starting Deployment to DEV ==="
+
+            cd /var/www/dev.atlearnlms.com
+
+            echo "=== Creating Backup for Rollback ==="
+            rm -rf rollback_public_html_old
+            cp -r public_html rollback_public_html_old
+
+            echo "=== Pulling Latest Code from Git ==="
+            git fetch --all
+            git reset --hard origin/dev
+
+            echo "=== Installing Dependencies ==="
+            cd atlearnlms.com/frontend
+            npm install
+
+            echo "=== Building React App ==="
+            npm run build || { echo "BUILD FAILED, RESTORING BACKUP"; rm -rf ../public_html; mv /var/www/dev.atlearnlms.com/rollback_public_html_old /var/www/dev.atlearnlms.com/public_html; exit 1; }
+
+            echo "=== Copying Build to public_html ==="
+            rm -rf /var/www/dev.atlearnlms.com/public_html/*
+            cp -r /var/www/dev.atlearnlms.com/atlearnlms.com/frontend/build/* /var/www/dev.atlearnlms.com/public_html/
+
+            echo "=== Setting Permissions ==="
+            chown -R www-data:www-data /var/www/dev.atlearnlms.com/public_html
+
+            echo "=== Reloading Apache ==="
+            systemctl reload apache2
+
+            echo "=== Deployment Completed Successfully ==="
